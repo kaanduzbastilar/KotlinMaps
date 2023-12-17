@@ -42,6 +42,8 @@ android {
 
 dependencies {
 
+    val room_version = "2.6.0"
+
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.10.0")
@@ -51,8 +53,6 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
-    val room_version = "2.6.0"
-
     implementation("androidx.room:room-runtime:$room_version")
     annotationProcessor("androidx.room:room-compiler:$room_version")
 
@@ -60,6 +60,6 @@ dependencies {
     ksp("androidx.room:room-compiler:$room_version")
     // optional - RxJava3 support for Room
     implementation("androidx.room:room-rxjava3:$room_version")
-    implementation ("io.reactivex.rxjava3:rxandroid:3.0.0")
+    implementation ("io.reactivex.rxjava3:rxandroid:3.0.2")
 
 }
